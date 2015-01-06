@@ -3,3 +3,6 @@ Creates a new repository containing all files in current location.  Creates a st
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The working directory contains all the files that can go into a repository.  The staging area is the space that allows users to control which files in the working directory are added to the repository and when they are added.  This allows users to control the initial versioning of the repository so that commits are created according to logical operations.  Commits happen in a repository, not in a staging area.
+
+How can you use the staging area to make sure you have one commit per logical change?
+After each logical change use git add to move changes to the staging area.  Then invoke git diff to double check work.  Finally invoke git commit, if change is correct.
