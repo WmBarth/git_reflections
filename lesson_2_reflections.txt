@@ -9,3 +9,6 @@ After each logical change use git add to move changes to the staging area.  Then
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 If I want to make an experimental change, a branch would allow me to quickly go back and forth between the master and the experiment.  Or if multiple people are working on a project, each person could have their own branch, and merge their work.
+
+How do the diagrams help you visualize the branch structure?
+The diagrams show the tree structure of the commits.  They are a map of the versions, with each commit, from the tip of the head back, showing its parent, back to the origin.  The diagram also helps to visualize the nodes, where a branch is initiated.
