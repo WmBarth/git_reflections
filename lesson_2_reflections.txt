@@ -15,3 +15,7 @@ The diagrams show the tree structure of the commits.  They are a map of the vers
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 Merge combines the branches back to their common origin.  If code not in the original was added, this will be added to the new master.  If the same code was modified in both branches a merge conflict will result.  The two branches are now parents of the new Master, hence the master has two arrows pointing back to each branch from whence it came.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Pros:  Speed.  Less prone to error (copying and pasting wrong sections)
+Cons:  If modified code is inter-related (affects functions beyond one that is modified) and it affects the modification that another person made, it might crash.  
