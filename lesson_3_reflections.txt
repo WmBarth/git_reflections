@@ -7,3 +7,9 @@ It's possible that the remote has commits or data that are not ready for review 
 
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 A branch is a child that initiates a new line of commits, moving off a main line or history of commits.  It resides in one location.  A fork exists on git hub.  It separates the commit history into a new history.  This allows a user to make changes and commits without affecting other commit histories. A clone copies everything in a repository from one location to another.  A repository can be cloned (copied) within the same machine or from one machine to another.  It differs from a fork in that it does not record or relate to the original author of the repository.It also differs because it can be done outside of git hub, whereas a fork is something that is part of git hub. 
+
+If git pull is the same as git fetch + git merge, why don't all pull commands create merge commits?  If merging two commits where one is the ancestor of the other (i.e., where one is reachable by the other) then there is no reason because the child has the same info as the parent.  There is no reason to make a merge commit.  In this case it is called a fast-forward merge.  A FF merge takes a label from an ancestor and moves it to the tip of the branch.  
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+If I'm collaborating and I'm going offline, I might want to know what work has been done so that I can continue working effectively.  Or even if I'm not collaborating, but going offline, I can update my local, continue working, then run git diff to see the changes.
+
